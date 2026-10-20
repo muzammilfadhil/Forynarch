@@ -1,0 +1,9 @@
+# Defaults only; explicit user settings take precedence.
+[org.gnome.desktop.interface]
+gtk-theme='Adwaita-dark'
+icon-theme='Forynarch'
+font-name='Adwaita Sans 10'
+color-scheme='prefer-dark'
+
+[org.gnome.desktop.wm.preferences]
+button-layout='minimize,maximize,close:'

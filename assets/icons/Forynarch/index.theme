@@ -1,0 +1,19 @@
+[Icon Theme]
+Name=Forynarch
+Comment=Blue Hour folders, with native Adwaita fallbacks
+Inherits=Adwaita,hicolor
+Directories=scalable/places,scalable/apps
+
+[scalable/places]
+Size=64
+Type=Scalable
+MinSize=16
+MaxSize=256
+Context=Places
+
+[scalable/apps]
+Size=64
+Type=Scalable
+MinSize=16
+MaxSize=256
+Context=Applications

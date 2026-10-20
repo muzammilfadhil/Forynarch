@@ -1,0 +1,105 @@
+FORYNARCH — Keyboard shortcuts
+
+Super + SPACE                        Search apps
+Super + PERIOD                       Emoji, symbols and GIFs
+Super + Q                            Terminal
+Super + Ctrl + SPACE                 Arrange windows
+Super + Ctrl + LEFT                  Snap left
+Super + Ctrl + RIGHT                 Snap right
+Super + Ctrl + UP                    Snap top
+Super + Ctrl + DOWN                  Snap bottom
+Super + E                            Files
+Super + C                            Close window
+Super + V                            Float / tile
+Super + RETURN                       Terminal
+Super + Shift + F                    Files
+Super + Alt + SPACE                  Search apps
+Super + Ctrl + L                     Lock
+Super + K                            Hotkey guide
+Super + W                            Close window
+Super + T                            Float / tile
+Super + J                            Split direction
+Super + P                            Pseudo tile
+Super + F                            Fullscreen
+Super + Alt + F                      Maximize
+Super + Ctrl + F                     Client fullscreen
+Super + TAB                          Next local slot
+Super + Shift + TAB                  Previous local slot
+Super + Ctrl + TAB                   Previous workspace
+Alt + TAB                            Recent window
+Alt + Shift + TAB                    Recent window, reverse
+Ctrl + Alt + TAB                     Next monitor
+Ctrl + Alt + Shift + TAB             Previous monitor
+Super + S                            Scratchpad
+Super + Alt + S                      Send to scratchpad
+Super + G                            Group windows
+Super + Alt + TAB                    Next grouped tab
+Super + Alt + Shift + TAB            Previous grouped tab
+Super + MINUS                        Widen window
+Super + EQUAL                        Narrow window
+Super + Shift + MINUS                Shorten window
+Super + Shift + EQUAL                Heighten window
+Super + Ctrl + A                     Sound settings
+Super + Ctrl + B                     Bluetooth settings
+Super + Ctrl + W                     Network settings
+Super + Ctrl + D                     Display settings
+Super + Ctrl + P                     Power settings
+Super + Ctrl + H                     Hardware overview
+PRINT                                Full screen screenshot
+Super + Ctrl + C                     Screenshot
+Super + COMMA                        Dismiss notice
+Super + Shift + COMMA                Dismiss all notices
+Super + Ctrl + COMMA                 Quiet notifications
+Super + Shift + S                    Select screenshot area
+Super + Ctrl + V                     Clipboard history
+Super + H                            Minimize window
+Super + D                            Show desktop / restore windows
+Super + L                            Toggle whole-workspace floating
+Super + Ctrl + M                     Minimize window
+Super + Ctrl + Shift + M             Restore minimized window
+Super + GRAVE                        Scratchpad
+Super + Shift + GRAVE                Send to scratchpad
+Super + Ctrl + Z                     Zoom
+Super + Ctrl + Alt + Z               Reset zoom
+Super + Alt + G                      Ungroup window
+XF86AudioNext                        Next track
+XF86AudioPrev                        Previous track
+XF86AudioPlay                        Play / pause
+XF86AudioPause                       Play / pause
+Super + Alt + left                   Group left
+Super + left                         Focus left
+Super + Shift + left                 Swap left
+Super + Alt + right                  Group right
+Super + right                        Focus right
+Super + Shift + right                Swap right
+Super + Alt + up                     Group up
+Super + up                           Focus up
+Super + Shift + up                   Swap up
+Super + Alt + down                   Group down
+Super + down                         Focus down
+Super + Shift + down                 Swap down
+Super + Alt + 1                      Group tab 1
+Super + 1                            Local slot 1
+Super + Shift + 1                    Send to local slot 1
+Super + Shift + Alt + 1              Send without following 1
+Super + Alt + 2                      Group tab 2
+Super + 2                            Local slot 2
+Super + Shift + 2                    Send to local slot 2
+Super + Shift + Alt + 2              Send without following 2
+Super + Alt + 3                      Group tab 3
+Super + 3                            Local slot 3
+Super + Shift + 3                    Send to local slot 3
+Super + Shift + Alt + 3              Send without following 3
+Super + Alt + 4                      Group tab 4
+Super + 4                            Local slot 4
+Super + Shift + 4                    Send to local slot 4
+Super + Shift + Alt + 4              Send without following 4
+Super + Alt + 5                      Group tab 5
+Super + 5                            Local slot 5
+Super + Shift + 5                    Send to local slot 5
+Super + Shift + Alt + 5              Send without following 5
+S + U + P + E + R +   + + +   + D    Show desktop / restore windows
+Super + Left drag                    Move window
+Super + Right drag                   Resize window
+
+Workspace slots 1–5 belong to the focused monitor.

@@ -1,0 +1,739 @@
+{
+  "version": 1,
+  "bindings": [
+    {
+      "id": "eaca5f40fe8e32f4",
+      "title": "Search apps",
+      "keys": "SUPER + SPACE",
+      "code": "hl.dsp.exec_cmd(\"forynarch-launcher\")",
+      "flags": {}
+    },
+    {
+      "id": "1fa471b1945bf2b8",
+      "title": "Emoji, symbols and GIFs",
+      "keys": "SUPER + PERIOD",
+      "code": "hl.dsp.exec_cmd(\"forynarch-emoji\")",
+      "flags": {}
+    },
+    {
+      "id": "04419fe017787c35",
+      "title": "Terminal",
+      "keys": "SUPER + Q",
+      "code": "hl.dsp.exec_cmd(\"forynarch-terminal\")",
+      "flags": {}
+    },
+    {
+      "id": "926f33ebecd9bc56",
+      "title": "Arrange windows",
+      "keys": "SUPER + CTRL + SPACE",
+      "code": "hl.dsp.exec_cmd(\"qs -c forynarch ipc call appearance openLayout\")",
+      "flags": {}
+    },
+    {
+      "id": "f9d6a14cace6bbbf",
+      "title": "Snap left",
+      "keys": "SUPER + CTRL + LEFT",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-layout left\")",
+      "flags": {}
+    },
+    {
+      "id": "dc5bcdaa75c74c01",
+      "title": "Snap right",
+      "keys": "SUPER + CTRL + RIGHT",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-layout right\")",
+      "flags": {}
+    },
+    {
+      "id": "1acb4ce629c2ee55",
+      "title": "Snap top",
+      "keys": "SUPER + CTRL + UP",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-layout top\")",
+      "flags": {}
+    },
+    {
+      "id": "ee77501e3672a2cc",
+      "title": "Snap bottom",
+      "keys": "SUPER + CTRL + DOWN",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-layout bottom\")",
+      "flags": {}
+    },
+    {
+      "id": "626fb1981e193c1f",
+      "title": "Files",
+      "keys": "SUPER + E",
+      "code": "hl.dsp.exec_cmd(\"forynarch-files\")",
+      "flags": {}
+    },
+    {
+      "id": "0933c81609cdc42b",
+      "title": "Close window",
+      "keys": "SUPER + C",
+      "code": "hl.dsp.window.close()",
+      "flags": {}
+    },
+    {
+      "id": "6754b66303f3ae52",
+      "title": "Float / tile",
+      "keys": "SUPER + V",
+      "code": "hl.dsp.window.float({action=\"toggle\"})",
+      "flags": {}
+    },
+    {
+      "id": "ce65ac948816572e",
+      "title": "Terminal",
+      "keys": "SUPER + RETURN",
+      "code": "hl.dsp.exec_cmd(\"forynarch-terminal\")",
+      "flags": {}
+    },
+    {
+      "id": "41c631239dc1900a",
+      "title": "Files",
+      "keys": "SUPER + SHIFT + F",
+      "code": "hl.dsp.exec_cmd(\"forynarch-files\")",
+      "flags": {}
+    },
+    {
+      "id": "fee1663b32721e01",
+      "title": "Search apps",
+      "keys": "SUPER + ALT + SPACE",
+      "code": "hl.dsp.exec_cmd(\"forynarch-launcher\")",
+      "flags": {}
+    },
+    {
+      "id": "55b449811819a324",
+      "title": "Lock",
+      "keys": "SUPER + CTRL + L",
+      "code": "hl.dsp.exec_cmd(\"forynarch-hotkey lock\")",
+      "flags": {}
+    },
+    {
+      "id": "68b1f1a22a522953",
+      "title": "Hotkey guide",
+      "keys": "SUPER + K",
+      "code": "hl.dsp.exec_cmd(\"forynarch-settings Shortcuts\")",
+      "flags": {}
+    },
+    {
+      "id": "10409c610190da58",
+      "title": "Close window",
+      "keys": "SUPER + W",
+      "code": "hl.dsp.window.close()",
+      "flags": {}
+    },
+    {
+      "id": "f813fa37c470397a",
+      "title": "Float / tile",
+      "keys": "SUPER + T",
+      "code": "hl.dsp.window.float({action=\"toggle\"})",
+      "flags": {}
+    },
+    {
+      "id": "dd0c394a4da098cd",
+      "title": "Split direction",
+      "keys": "SUPER + J",
+      "code": "hl.dsp.layout(\"togglesplit\")",
+      "flags": {}
+    },
+    {
+      "id": "19ff1d0d7b58d557",
+      "title": "Pseudo tile",
+      "keys": "SUPER + P",
+      "code": "hl.dsp.window.pseudo()",
+      "flags": {}
+    },
+    {
+      "id": "50660e1d88a92ad9",
+      "title": "Fullscreen",
+      "keys": "SUPER + F",
+      "code": "hl.dsp.window.fullscreen({mode=\"fullscreen\"})",
+      "flags": {}
+    },
+    {
+      "id": "3ad40e70ec150655",
+      "title": "Maximize",
+      "keys": "SUPER + ALT + F",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-control maximize\")",
+      "flags": {}
+    },
+    {
+      "id": "7d3c0d5c968106d4",
+      "title": "Client fullscreen",
+      "keys": "SUPER + CTRL + F",
+      "code": "hl.dsp.window.fullscreen_state({internal=0,client=2})",
+      "flags": {}
+    },
+    {
+      "id": "942935121e6955ac",
+      "title": "Next local slot",
+      "keys": "SUPER + TAB",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace next\")",
+      "flags": {}
+    },
+    {
+      "id": "8506065c238cf24d",
+      "title": "Previous local slot",
+      "keys": "SUPER + SHIFT + TAB",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace previous\")",
+      "flags": {}
+    },
+    {
+      "id": "c91d50c4a0b14454",
+      "title": "Previous workspace",
+      "keys": "SUPER + CTRL + TAB",
+      "code": "hl.dsp.focus({workspace=\"previous_per_monitor\"})",
+      "flags": {}
+    },
+    {
+      "id": "6b08c5307c73eafe",
+      "title": "Recent window",
+      "keys": "ALT + TAB",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-switcher next\")",
+      "flags": {}
+    },
+    {
+      "id": "3be81c467b585ddf",
+      "title": "Recent window, reverse",
+      "keys": "ALT + SHIFT + TAB",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-switcher previous\")",
+      "flags": {}
+    },
+    {
+      "id": "fbc269beae4c31dd",
+      "title": "Finish switch",
+      "keys": "Alt_L",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-switcher reset\")",
+      "flags": {
+        "release": true,
+        "ignore_mods": true,
+        "non_consuming": true
+      }
+    },
+    {
+      "id": "8829004195379421",
+      "title": "Finish switch",
+      "keys": "Alt_R",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-switcher reset\")",
+      "flags": {
+        "release": true,
+        "ignore_mods": true,
+        "non_consuming": true
+      }
+    },
+    {
+      "id": "9b7f66e7c5c47c75",
+      "title": "Next monitor",
+      "keys": "CTRL + ALT + TAB",
+      "code": "hl.dsp.focus({monitor=\"+1\"})",
+      "flags": {}
+    },
+    {
+      "id": "4d8dd33056ef9259",
+      "title": "Previous monitor",
+      "keys": "CTRL + ALT + SHIFT + TAB",
+      "code": "hl.dsp.focus({monitor=\"-1\"})",
+      "flags": {}
+    },
+    {
+      "id": "b6c7c44caa1a413a",
+      "title": "Scratchpad",
+      "keys": "SUPER + S",
+      "code": "hl.dsp.workspace.toggle_special(\"magic\")",
+      "flags": {}
+    },
+    {
+      "id": "a17ab1501bc2d463",
+      "title": "Send to scratchpad",
+      "keys": "SUPER + ALT + S",
+      "code": "hl.dsp.window.move({workspace=\"special:magic\"})",
+      "flags": {}
+    },
+    {
+      "id": "2367cbd2125fb203",
+      "title": "Group windows",
+      "keys": "SUPER + G",
+      "code": "hl.dsp.group.toggle()",
+      "flags": {}
+    },
+    {
+      "id": "fbeacb397dfc2a28",
+      "title": "Next grouped tab",
+      "keys": "SUPER + ALT + TAB",
+      "code": "hl.dsp.group.next()",
+      "flags": {}
+    },
+    {
+      "id": "1c68edc1dc627a15",
+      "title": "Previous grouped tab",
+      "keys": "SUPER + ALT + SHIFT + TAB",
+      "code": "hl.dsp.group.prev()",
+      "flags": {}
+    },
+    {
+      "id": "27ff79ec474c9bab",
+      "title": "Widen window",
+      "keys": "SUPER + MINUS",
+      "code": "hl.dsp.window.resize({x=40,y=0,relative=true})",
+      "flags": {}
+    },
+    {
+      "id": "e2f40e45918c176c",
+      "title": "Narrow window",
+      "keys": "SUPER + EQUAL",
+      "code": "hl.dsp.window.resize({x=-40,y=0,relative=true})",
+      "flags": {}
+    },
+    {
+      "id": "ea9b16a19749624e",
+      "title": "Shorten window",
+      "keys": "SUPER + SHIFT + MINUS",
+      "code": "hl.dsp.window.resize({x=0,y=-40,relative=true})",
+      "flags": {}
+    },
+    {
+      "id": "a038b2c5af9a53d1",
+      "title": "Heighten window",
+      "keys": "SUPER + SHIFT + EQUAL",
+      "code": "hl.dsp.window.resize({x=0,y=40,relative=true})",
+      "flags": {}
+    },
+    {
+      "id": "0bdb9ad2916cc2f4",
+      "title": "Sound settings",
+      "keys": "SUPER + CTRL + A",
+      "code": "hl.dsp.exec_cmd(\"forynarch-settings Sound\")",
+      "flags": {}
+    },
+    {
+      "id": "822d228392261edd",
+      "title": "Bluetooth settings",
+      "keys": "SUPER + CTRL + B",
+      "code": "hl.dsp.exec_cmd(\"forynarch-settings Bluetooth\")",
+      "flags": {}
+    },
+    {
+      "id": "1d77c2bd57201354",
+      "title": "Network settings",
+      "keys": "SUPER + CTRL + W",
+      "code": "hl.dsp.exec_cmd(\"forynarch-settings Network\")",
+      "flags": {}
+    },
+    {
+      "id": "10801b8948089697",
+      "title": "Display settings",
+      "keys": "SUPER + CTRL + D",
+      "code": "hl.dsp.exec_cmd(\"forynarch-settings Displays\")",
+      "flags": {}
+    },
+    {
+      "id": "2a7144fe07fbbf74",
+      "title": "Power settings",
+      "keys": "SUPER + CTRL + P",
+      "code": "hl.dsp.exec_cmd(\"forynarch-settings Power\")",
+      "flags": {}
+    },
+    {
+      "id": "762128ea6114fca0",
+      "title": "Hardware overview",
+      "keys": "SUPER + CTRL + H",
+      "code": "hl.dsp.exec_cmd(\"forynarch-settings About\")",
+      "flags": {}
+    },
+    {
+      "id": "9ac60029d6f80c0b",
+      "title": "Full screen screenshot",
+      "keys": "PRINT",
+      "code": "hl.dsp.exec_cmd(\"forynarch-capture fullscreen\")",
+      "flags": {}
+    },
+    {
+      "id": "0e4bca41e4e1c19b",
+      "title": "Screenshot",
+      "keys": "SUPER + CTRL + C",
+      "code": "hl.dsp.exec_cmd(\"forynarch-hotkey screenshot\")",
+      "flags": {}
+    },
+    {
+      "id": "9b2e47f54314f53d",
+      "title": "Dismiss notice",
+      "keys": "SUPER + COMMA",
+      "code": "hl.dsp.exec_cmd(\"makoctl dismiss\")",
+      "flags": {}
+    },
+    {
+      "id": "8b572a80ea7eed20",
+      "title": "Dismiss all notices",
+      "keys": "SUPER + SHIFT + COMMA",
+      "code": "hl.dsp.exec_cmd(\"makoctl dismiss --all\")",
+      "flags": {}
+    },
+    {
+      "id": "bbbe262fc0f6175e",
+      "title": "Quiet notifications",
+      "keys": "SUPER + CTRL + COMMA",
+      "code": "hl.dsp.exec_cmd(\"forynarch-notifications toggle\")",
+      "flags": {}
+    },
+    {
+      "id": "c79383544ccfea26",
+      "title": "Select screenshot area",
+      "keys": "SUPER + SHIFT + S",
+      "code": "hl.dsp.exec_cmd(\"forynarch-capture region\")",
+      "flags": {}
+    },
+    {
+      "id": "cb20159bdf656757",
+      "title": "Clipboard history",
+      "keys": "SUPER + CTRL + V",
+      "code": "hl.dsp.exec_cmd(\"forynarch-capture-ui clipboard\")",
+      "flags": {}
+    },
+    {
+      "id": "4deb5f2668af78b2",
+      "title": "Minimize window",
+      "keys": "SUPER + H",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-control minimize\")",
+      "flags": {}
+    },
+    {
+      "id": "eb7e7fcdfdf2437e",
+      "title": "Show desktop / restore windows",
+      "keys": "SUPER + D",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-control show-desktop\")",
+      "flags": {}
+    },
+    {
+      "id": "a2c86b1c05525b2e",
+      "title": "Toggle whole-workspace floating",
+      "keys": "SUPER + L",
+      "code": "hl.dsp.exec_cmd(\"forynarch-hotkey layout-toggle\")",
+      "flags": {}
+    },
+    {
+      "id": "60c7705cedeb361e",
+      "title": "Minimize window",
+      "keys": "SUPER + CTRL + M",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-control minimize\")",
+      "flags": {}
+    },
+    {
+      "id": "51888974bd3960ac",
+      "title": "Restore minimized window",
+      "keys": "SUPER + CTRL + SHIFT + M",
+      "code": "hl.dsp.exec_cmd(\"forynarch-window-control restore-last\")",
+      "flags": {}
+    },
+    {
+      "id": "3cebdf1497d8f6ef",
+      "title": "Move window",
+      "keys": "SUPER + mouse:272",
+      "code": "hl.dsp.window.drag()",
+      "flags": {
+        "mouse": true
+      }
+    },
+    {
+      "id": "666f8947758bcf39",
+      "title": "Resize window",
+      "keys": "SUPER + mouse:273",
+      "code": "hl.dsp.window.resize()",
+      "flags": {
+        "mouse": true
+      }
+    },
+    {
+      "id": "0b9fefd179bbd39b",
+      "title": "Scratchpad",
+      "keys": "SUPER + GRAVE",
+      "code": "hl.dsp.workspace.toggle_special(\"magic\")",
+      "flags": {}
+    },
+    {
+      "id": "9e02c60941221eca",
+      "title": "Send to scratchpad",
+      "keys": "SUPER + SHIFT + GRAVE",
+      "code": "hl.dsp.window.move({workspace=\"special:magic\"})",
+      "flags": {}
+    },
+    {
+      "id": "94d4c97632c2540c",
+      "title": "Zoom",
+      "keys": "SUPER + CTRL + Z",
+      "code": "hl.dsp.exec_cmd(\"forynarch-hotkey zoom\")",
+      "flags": {}
+    },
+    {
+      "id": "66a31198d1ad9721",
+      "title": "Reset zoom",
+      "keys": "SUPER + CTRL + ALT + Z",
+      "code": "hl.dsp.exec_cmd(\"forynarch-hotkey zoom-reset\")",
+      "flags": {}
+    },
+    {
+      "id": "73e5117c033fb4e3",
+      "title": "Ungroup window",
+      "keys": "SUPER + ALT + G",
+      "code": "hl.dsp.window.move({out_of_group=true})",
+      "flags": {}
+    },
+    {
+      "id": "bcfa2410997d34e9",
+      "title": "Next track",
+      "keys": "XF86AudioNext",
+      "code": "hl.dsp.exec_cmd(\"forynarch-hotkey media next\")",
+      "flags": {
+        "locked": true
+      }
+    },
+    {
+      "id": "32f3c431a2ba1091",
+      "title": "Previous track",
+      "keys": "XF86AudioPrev",
+      "code": "hl.dsp.exec_cmd(\"forynarch-hotkey media previous\")",
+      "flags": {
+        "locked": true
+      }
+    },
+    {
+      "id": "4bd2ba1ad06f21bb",
+      "title": "Play / pause",
+      "keys": "XF86AudioPlay",
+      "code": "hl.dsp.exec_cmd(\"forynarch-hotkey media toggle\")",
+      "flags": {
+        "locked": true
+      }
+    },
+    {
+      "id": "313de9fd00eab5ab",
+      "title": "Play / pause",
+      "keys": "XF86AudioPause",
+      "code": "hl.dsp.exec_cmd(\"forynarch-hotkey media toggle\")",
+      "flags": {
+        "locked": true
+      }
+    },
+    {
+      "id": "fc35c102e0d8fef4",
+      "title": "Group left",
+      "keys": "SUPER + ALT + left",
+      "code": "hl.dsp.window.move({into_group=\"l\"})",
+      "flags": {}
+    },
+    {
+      "id": "eeda8e45046267e7",
+      "title": "Focus left",
+      "keys": "SUPER + left",
+      "code": "function() hl.dispatch(hl.dsp.focus({direction=\"l\"})); local window=hl.get_active_window(); if window and window.floating then hl.dispatch(hl.dsp.window.bring_to_top()) end end",
+      "flags": {}
+    },
+    {
+      "id": "390fb9cf383e6d30",
+      "title": "Swap left",
+      "keys": "SUPER + SHIFT + left",
+      "code": "hl.dsp.window.swap({direction=\"l\"})",
+      "flags": {}
+    },
+    {
+      "id": "c9ab5ba8d047b084",
+      "title": "Group right",
+      "keys": "SUPER + ALT + right",
+      "code": "hl.dsp.window.move({into_group=\"r\"})",
+      "flags": {}
+    },
+    {
+      "id": "47acb685fbcce54d",
+      "title": "Focus right",
+      "keys": "SUPER + right",
+      "code": "function() hl.dispatch(hl.dsp.focus({direction=\"r\"})); local window=hl.get_active_window(); if window and window.floating then hl.dispatch(hl.dsp.window.bring_to_top()) end end",
+      "flags": {}
+    },
+    {
+      "id": "623462c07824d3fa",
+      "title": "Swap right",
+      "keys": "SUPER + SHIFT + right",
+      "code": "hl.dsp.window.swap({direction=\"r\"})",
+      "flags": {}
+    },
+    {
+      "id": "1e350b7b77acb57a",
+      "title": "Group up",
+      "keys": "SUPER + ALT + up",
+      "code": "hl.dsp.window.move({into_group=\"u\"})",
+      "flags": {}
+    },
+    {
+      "id": "00226f3137dc4f7c",
+      "title": "Focus up",
+      "keys": "SUPER + up",
+      "code": "function() hl.dispatch(hl.dsp.focus({direction=\"u\"})); local window=hl.get_active_window(); if window and window.floating then hl.dispatch(hl.dsp.window.bring_to_top()) end end",
+      "flags": {}
+    },
+    {
+      "id": "ad518dc4efcf2035",
+      "title": "Swap up",
+      "keys": "SUPER + SHIFT + up",
+      "code": "hl.dsp.window.swap({direction=\"u\"})",
+      "flags": {}
+    },
+    {
+      "id": "0593f1c0fcca75b2",
+      "title": "Group down",
+      "keys": "SUPER + ALT + down",
+      "code": "hl.dsp.window.move({into_group=\"d\"})",
+      "flags": {}
+    },
+    {
+      "id": "8d2d6452a487241e",
+      "title": "Focus down",
+      "keys": "SUPER + down",
+      "code": "function() hl.dispatch(hl.dsp.focus({direction=\"d\"})); local window=hl.get_active_window(); if window and window.floating then hl.dispatch(hl.dsp.window.bring_to_top()) end end",
+      "flags": {}
+    },
+    {
+      "id": "98877ec3770c90a4",
+      "title": "Swap down",
+      "keys": "SUPER + SHIFT + down",
+      "code": "hl.dsp.window.swap({direction=\"d\"})",
+      "flags": {}
+    },
+    {
+      "id": "7bcd1c52741e16bd",
+      "title": "Group tab 1",
+      "keys": "SUPER + ALT + 1",
+      "code": "hl.dsp.group.active({index=1})",
+      "flags": {}
+    },
+    {
+      "id": "7216adba9336ea02",
+      "title": "Local slot 1",
+      "keys": "SUPER + 1",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace focus 1\")",
+      "flags": {}
+    },
+    {
+      "id": "6e3fcaca415905c3",
+      "title": "Send to local slot 1",
+      "keys": "SUPER + SHIFT + 1",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move 1\")",
+      "flags": {}
+    },
+    {
+      "id": "860350a576db492b",
+      "title": "Send without following 1",
+      "keys": "SUPER + SHIFT + ALT + 1",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move-silent 1\")",
+      "flags": {}
+    },
+    {
+      "id": "554bf774aadbf012",
+      "title": "Group tab 2",
+      "keys": "SUPER + ALT + 2",
+      "code": "hl.dsp.group.active({index=2})",
+      "flags": {}
+    },
+    {
+      "id": "d97e432bd43e03ef",
+      "title": "Local slot 2",
+      "keys": "SUPER + 2",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace focus 2\")",
+      "flags": {}
+    },
+    {
+      "id": "778e6577bf5c0087",
+      "title": "Send to local slot 2",
+      "keys": "SUPER + SHIFT + 2",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move 2\")",
+      "flags": {}
+    },
+    {
+      "id": "c46a76fe8b90256f",
+      "title": "Send without following 2",
+      "keys": "SUPER + SHIFT + ALT + 2",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move-silent 2\")",
+      "flags": {}
+    },
+    {
+      "id": "1357cfab6e106b9f",
+      "title": "Group tab 3",
+      "keys": "SUPER + ALT + 3",
+      "code": "hl.dsp.group.active({index=3})",
+      "flags": {}
+    },
+    {
+      "id": "f7b06963150dcab9",
+      "title": "Local slot 3",
+      "keys": "SUPER + 3",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace focus 3\")",
+      "flags": {}
+    },
+    {
+      "id": "eac1e80d4368bc9f",
+      "title": "Send to local slot 3",
+      "keys": "SUPER + SHIFT + 3",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move 3\")",
+      "flags": {}
+    },
+    {
+      "id": "2522d2e40813440a",
+      "title": "Send without following 3",
+      "keys": "SUPER + SHIFT + ALT + 3",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move-silent 3\")",
+      "flags": {}
+    },
+    {
+      "id": "b1a9ea8f3c9a475c",
+      "title": "Group tab 4",
+      "keys": "SUPER + ALT + 4",
+      "code": "hl.dsp.group.active({index=4})",
+      "flags": {}
+    },
+    {
+      "id": "3bf722843b6aee03",
+      "title": "Local slot 4",
+      "keys": "SUPER + 4",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace focus 4\")",
+      "flags": {}
+    },
+    {
+      "id": "de79847920c24bb7",
+      "title": "Send to local slot 4",
+      "keys": "SUPER + SHIFT + 4",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move 4\")",
+      "flags": {}
+    },
+    {
+      "id": "d59ed4137db1911b",
+      "title": "Send without following 4",
+      "keys": "SUPER + SHIFT + ALT + 4",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move-silent 4\")",
+      "flags": {}
+    },
+    {
+      "id": "b8245d624fd33261",
+      "title": "Group tab 5",
+      "keys": "SUPER + ALT + 5",
+      "code": "hl.dsp.group.active({index=5})",
+      "flags": {}
+    },
+    {
+      "id": "6d773aef79667ac0",
+      "title": "Local slot 5",
+      "keys": "SUPER + 5",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace focus 5\")",
+      "flags": {}
+    },
+    {
+      "id": "bfb47d43dc479d36",
+      "title": "Send to local slot 5",
+      "keys": "SUPER + SHIFT + 5",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move 5\")",
+      "flags": {}
+    },
+    {
+      "id": "8165ce381c5c98d7",
+      "title": "Send without following 5",
+      "keys": "SUPER + SHIFT + ALT + 5",
+      "code": "hl.dsp.exec_cmd(\"forynarch-workspace move-silent 5\")",
+      "flags": {}
+    }
+  ]
+}

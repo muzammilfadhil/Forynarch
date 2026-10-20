@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Trash
+Comment=Restore or permanently remove deleted files
+Keywords=trash;delete;restore;recycle bin;files;
+Exec=thunar trash:///
+Icon=user-trash-full
+Terminal=false
+NoDisplay=false
+Categories=System;FileTools;

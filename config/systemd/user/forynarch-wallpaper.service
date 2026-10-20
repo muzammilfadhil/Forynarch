@@ -1,0 +1,8 @@
+[Unit]
+Description=Forynarch desktop wallpaper
+PartOf=graphical-session.target
+After=graphical-session-pre.target
+
+[Service]
+Type=exec
+ExecStart=/usr/local/bin/forynarch-wallpaper render

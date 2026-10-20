@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "workday",
+  "name": "Workday",
+  "author": "Forynarch contributors",
+  "license": "CC0-1.0",
+  "description": "A quiet clock and a compact resource card. A data-only widget example.",
+  "widgets": [
+    {"id": "time", "name": "Workday clock", "height": 156, "items": [
+      {"kind": "text", "text": "MAKE ROOM FOR GOOD WORK", "size": 10, "color": "accent"},
+      {"kind": "clock", "format": "HH:mm", "size": 32},
+      {"kind": "text", "text": "{date}", "size": 12, "color": "muted"}
+    ]},
+    {"id": "resources", "name": "Resource overview", "height": 164, "items": [
+      {"kind": "text", "text": "SYSTEM", "size": 10, "color": "accent"},
+      {"kind": "meter", "source": "memory", "label": "Memory"},
+      {"kind": "divider"},
+      {"kind": "meter", "source": "battery", "label": "Battery"}
+    ]}
+  ]
+}

@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Forynarch Blue Hour
+Description=Forynarch animated boot progress
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/forynarch
+ScriptFile=/usr/share/plymouth/themes/forynarch/forynarch.script

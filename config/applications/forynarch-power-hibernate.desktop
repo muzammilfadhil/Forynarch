@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Hibernate
+Comment=Suspend this computer to disk, when supported
+Keywords=power;hibernate;
+Exec=forynarch-power Hibernate
+Icon=system-suspend-hibernate
+Terminal=false
+NoDisplay=false
+Categories=System;

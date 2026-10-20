@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = thunar
+Target = libxfce4ui
+Target = avahi
+
+[Action]
+Description = Updating Forynarch application names
+When = PostTransaction
+Exec = /usr/local/bin/forynarch-desktop-integrate

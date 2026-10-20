@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Lock Screen
+Comment=Lock this computer
+Keywords=power;lock;screen lock;
+Exec=forynarch-power Lock
+Icon=system-lock-screen
+Terminal=false
+NoDisplay=false
+Categories=System;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Install Forynarch
+Comment=Set up Forynarch with your storage, account and software choices
+Exec=forynarch-setup
+Icon=drive-harddisk
+Terminal=false
+Categories=System;
+Keywords=install;setup;operating system;partitions;disk;

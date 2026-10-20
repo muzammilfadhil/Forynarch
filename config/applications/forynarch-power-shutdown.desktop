@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Shut Down
+Comment=Power off this computer
+Keywords=power;shutdown;turn off;poweroff;
+Exec=forynarch-power "Shut down"
+Icon=system-shutdown
+Terminal=false
+NoDisplay=false
+Categories=System;

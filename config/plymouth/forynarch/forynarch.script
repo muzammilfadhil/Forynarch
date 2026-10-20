@@ -1,0 +1,103 @@
+Window.SetBackgroundTopColor(0.027, 0.047, 0.078);
+Window.SetBackgroundBottomColor(0.055, 0.102, 0.169);
+cx = Window.GetWidth() / 2;
+cy = Window.GetHeight() / 2;
+mark = Sprite(Image("mark.png"));
+mark.SetPosition(cx - 56, cy - 144, 1);
+title_image = Image.Text("Forynarch", 0.929, 0.953, 0.988, 1, "Sans 24");
+title = Sprite(title_image);
+title.SetPosition(cx - title_image.GetWidth() / 2, cy - 12, 1);
+track_image = Image("track.png");
+fill_image = Image("fill.png");
+track = Sprite(track_image);
+track.SetPosition(cx - 180, cy + 58, 1);
+bar = Sprite(fill_image.Scale(1, 4));
+bar.SetPosition(cx - 180, cy + 58, 2);
+counter = Sprite();
+description = Sprite();
+hint_image = Image.Text("Esc for boot details", 0.416, 0.518, 0.643, 1, "Sans 10");
+hint = Sprite(hint_image);
+hint.SetPosition(cx - hint_image.GetWidth() / 2, Window.GetHeight() - 58, 1);
+percent = 0;
+message = "Preparing your system";
+mode = Plymouth.GetMode();
+if (mode == "shutdown") message = "Shutting down";
+if (mode == "reboot") message = "Restarting";
+dialog = 0;
+angle = 0;
+for (i = 0; i < 5; i++) {
+    dots[i] = Sprite(Image("dot.png"));
+    dots[i].SetZ(2);
+}
+fun draw_labels() {
+    count_image = Image.Text(percent + " / 100 - estimated", 0.604, 0.796, 1, 1, "Sans 11");
+    counter.SetImage(count_image);
+    counter.SetPosition(cx - count_image.GetWidth() / 2, cy + 82, 1);
+    message_image = Image.Text(message, 0.686, 0.757, 0.851, 1, "Sans 12");
+    description.SetImage(message_image);
+    description.SetPosition(cx - message_image.GetWidth() / 2, cy + 116, 1);
+}
+draw_labels();
+fun refresh() {
+    global.angle += 0.024;
+    for (i = 0; i < 5; i++) {
+        phase = angle - i * 0.23;
+        dots[i].SetPosition(cx + Math.Cos(phase) * 72 - 3, cy - 88 + Math.Sin(phase) * 72 - 3, 2);
+        dots[i].SetOpacity(1 - i * 0.17);
+    }
+}
+Plymouth.SetRefreshFunction(refresh);
+fun boot_progress(duration, progress) {
+    next = Math.Int(progress * 100);
+    if (next < percent) next = percent;
+    if (next > 99) next = 99;
+    if (next != percent && !dialog) {
+        global.percent = next;
+        width = 360 * percent / 100;
+        if (width < 1) width = 1;
+        bar.SetImage(fill_image.Scale(width, 4));
+        draw_labels();
+    }
+}
+Plymouth.SetBootProgressFunction(boot_progress);
+fun update_status(status) {
+    if (!dialog) {
+        if (status == "forynarch-live") global.message = "Preparing your live desktop";
+        if (status == "forynarch-login") global.message = "Opening the login screen";
+        draw_labels();
+    }
+}
+Plymouth.SetUpdateStatusFunction(update_status);
+fun normal() {
+    global.dialog = 0;
+    global.message = "Starting system services";
+    if (mode == "shutdown") global.message = "Shutting down";
+    if (mode == "reboot") global.message = "Restarting";
+    draw_labels();
+}
+fun password(prompt, bullets) {
+    global.dialog = 1;
+    hidden = "";
+    for (i = 0; i < bullets; i++) hidden += "*";
+    global.message = prompt + "  " + hidden;
+    draw_labels();
+}
+fun question(prompt, entry) {
+    global.dialog = 1;
+    global.message = prompt + "  " + entry;
+    draw_labels();
+}
+Plymouth.SetDisplayNormalFunction(normal);
+Plymouth.SetDisplayPasswordFunction(password);
+Plymouth.SetDisplayQuestionFunction(question);
+fun show_message(text) { global.message = text; draw_labels(); }
+fun hide_message(text) { normal(); }
+Plymouth.SetDisplayMessageFunction(show_message);
+Plymouth.SetHideMessageFunction(hide_message);
+fun finish() {
+    global.percent = 100;
+    global.message = "Ready";
+    bar.SetImage(fill_image);
+    draw_labels();
+}
+Plymouth.SetQuitFunction(finish);

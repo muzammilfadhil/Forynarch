@@ -1,0 +1,61 @@
+# Candidate core input; consumed only by the approved forynarch.sh pipeline.
+# Runtime package-name/dependency/leak checks are mandatory before artifact use.
+# Package names/dependency closure require current Arch VM validation.
+# The user-selected UEFI boot menu uses GRUB; CPU/GPU drivers stay hardware choices.
+base
+grub
+sudo
+linux
+linux-firmware
+linux-firmware-marvell
+wireless-regdb
+mesa
+hyprland
+swaybg
+waybar
+alacritty
+zsh
+zsh-autosuggestions
+fastfetch
+fuzzel
+mako
+thunar
+gvfs
+udisks2
+# User-requested standard advanced partition editor; launched on demand.
+partitionmanager
+sddm
+plymouth
+qt6-svg
+qt6-multimedia
+qt6-multimedia-ffmpeg
+ntfs-3g
+exfatprogs
+jq
+gsettings-desktop-schemas
+hyprpolkitagent
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+networkmanager
+network-manager-applet
+bluez
+bluez-utils
+pipewire
+pipewire-audio
+pipewire-pulse
+pipewire-jack
+wireplumber
+sof-firmware
+alsa-ucm-conf
+alsa-utils
+ttf-dejavu
+noto-fonts-emoji
+wl-clipboard
+cava
+grim
+slurp
+hyprlock
+hypridle
+brightnessctl
+# Review network-manager-applet and portal dependency chains for Python.
+# Installed login uses SDDM Kath; no autologin or default browser is selected.

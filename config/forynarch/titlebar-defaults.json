@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "groups": [
+    {"id":"chrome","name":"Google Chrome","classes":["google-chrome","google-chrome-stable","google-chrome-beta","google-chrome-unstable","chrome"]},
+    {"id":"chromium","name":"Chromium","classes":["chromium","chromium-browser","org.chromium.Chromium"]},
+    {"id":"firefox","name":"Firefox, Zen and LibreWolf","classes":["firefox","firefox-esr","org.mozilla.firefox","zen","zen-browser","app.zen_browser.zen","librewolf","io.gitlab.librewolf-community"]},
+    {"id":"brave","name":"Brave","classes":["brave-browser","brave-browser-beta","brave-browser-nightly","com.brave.Browser"]},
+    {"id":"vivaldi","name":"Vivaldi","classes":["vivaldi-stable","vivaldi-snapshot","vivaldi","com.vivaldi.Vivaldi"]},
+    {"id":"discord","name":"Discord","classes":["discord","discordcanary","discordptb","discorddevelopment","com.discordapp.Discord"]},
+    {"id":"vesktop","name":"Vesktop","classes":["vesktop","dev.vencord.Vesktop"]},
+    {"id":"steam","name":"Steam client","classes":["steam","com.valvesoftware.Steam"]},
+    {"id":"mudil","name":"Mudil Music","classes":["me.muzammilfadhil.mudilmusic","com.example.muzo","mudilmusic","mudil music","mudil-music","muzo"]},
+    {"id":"thunar","name":"File Manager","classes":["thunar","org.xfce.thunar"]},
+    {"id":"gnome","name":"GNOME headerbar applications","classes":["org.gnome.Nautilus","org.gnome.TextEditor","org.gnome.gedit","org.gnome.Loupe","org.gnome.Evince","org.gnome.Papers","org.gnome.Calculator","org.gnome.clocks","org.gnome.Weather","org.gnome.DiskUtility","org.gnome.Settings","org.gnome.baobab","org.gnome.FileRoller","org.gnome.Snapshot"]}
+  ]
+}

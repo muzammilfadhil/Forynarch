@@ -1,0 +1,9 @@
+title = "Forynarch source secret checks"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Synthetic 13-character fixture used by tests/test_emoji_services.py; not a provider credential"
+regexTarget = "secret"
+regexes = ['''^FixtureKey123$''']

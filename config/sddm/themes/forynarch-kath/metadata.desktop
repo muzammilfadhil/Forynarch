@@ -1,0 +1,15 @@
+[SddmGreeterTheme]
+Name=Forynarch Kath
+Description=Forynarch navy adaptation of Hyprland Kath
+Author=keyitdev
+Website=https://github.com/Keyitdev/sddm-astronaut-theme
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=1.4
+ConfigFile=Themes/hyprland_kath.conf
+Screenshot=Backgrounds/hyprland_kath.png
+MainScript=Main.qml
+TranslationsDirectory=translations
+Theme-Id=forynarch-kath
+Theme-API=2.0
+QtVersion=6

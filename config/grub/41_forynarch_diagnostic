@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+root_uuid=$(grub-probe --target=fs_uuid /)
+boot_uuid=$(grub-probe --target=fs_uuid /boot)
+case "$root_uuid" in ''|*[!a-fA-F0-9-]*) exit 1;; esac
+case "$boot_uuid" in ''|*[!a-fA-F0-9-]*) exit 1;; esac
+cat <<EOF
+menuentry 'Forynarch (diagnostics)' --class forynarch --class gnu-linux {
+    search --no-floppy --fs-uuid --set=root $boot_uuid
+    linux /vmlinuz-linux root=UUID=$root_uuid rw
+    initrd /initramfs-linux.img
+}
+EOF

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=This Computer
+Comment=Drives, Windows aliases and safe read-only access
+GenericName=Drives and Storage
+Keywords=files;drives;disks;storage;windows;C:;D:;
+Exec=forynarch-drives ui
+Icon=drive-harddisk
+Terminal=false
+Categories=System;FileTools;

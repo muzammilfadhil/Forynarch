@@ -1,0 +1,11 @@
+# OPTIONAL DEVELOPMENT WISHLIST ONLY. Never merge wholesale into target or live manifest.
+# Use packages/optional-catalog.yaml + validated installer adapter for selections.
+# Developer extras are unchecked by default during installation.
+git
+nodejs
+npm
+python
+python-pip
+neovim
+code
+openssh

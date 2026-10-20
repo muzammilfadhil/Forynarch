@@ -1,0 +1,16 @@
+# Package wishlist, NOT a validated `packages.x86_64` manifest.
+# Review upstream names and dependencies for the target Arch version.
+hyprland
+waybar
+alacritty
+zsh
+zsh-autosuggestions
+fastfetch
+fuzzel
+mako
+thunar
+hyprpaper
+wl-clipboard
+networkmanager
+pipewire
+wireplumber

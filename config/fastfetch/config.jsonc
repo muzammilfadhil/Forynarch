@@ -1,0 +1,21 @@
+{
+  "logo": {
+    "type": "file",
+    "position": "auto",
+    "source": "/usr/share/forynarch/branding/terminal-logo.ansi",
+    "padding": { "right": 3 }
+  },
+  "display": {
+    "separator": "  ",
+    "color": "blue"
+  },
+  "modules": [
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "cpu",
+    "memory",
+    "gpu"
+  ]
+}

@@ -1,0 +1,9 @@
+[Unit]
+Description=Prepare Forynarch Live desktop account
+Before=sddm.service
+ConditionPathExists=/run/archiso
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/forynarch-live-prepare
+RemainAfterExit=yes

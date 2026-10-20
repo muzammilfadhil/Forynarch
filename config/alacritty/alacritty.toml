@@ -1,0 +1,44 @@
+[window]
+padding = { x = 16, y = 14 }
+dynamic_padding = true
+opacity = 0.84
+decorations = "None"
+title = "Terminal"
+
+[font]
+normal = { family = "DejaVu Sans Mono", style = "Regular" }
+size = 11.0
+
+[colors.primary]
+background = "#111823"
+foreground = "#dceaff"
+
+[colors.cursor]
+text = "#111823"
+cursor = "#9acbff"
+
+[colors.normal]
+black = "#263549"
+red = "#ee9d9d"
+green = "#a8c7a4"
+yellow = "#dfc18f"
+blue = "#9acbff"
+magenta = "#bdbae6"
+cyan = "#9bcbd1"
+white = "#dceaff"
+
+[colors.bright]
+black = "#8296b2"
+red = "#ffc2af"
+green = "#c0dfb7"
+yellow = "#f3d9ac"
+blue = "#bfddff"
+magenta = "#d1ceef"
+cyan = "#b8e3e6"
+white = "#eef5ff"
+
+[terminal.shell]
+program = "/bin/zsh"
+
+[scrolling]
+history = 5000

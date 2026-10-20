@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Sleep
+Comment=Suspend this computer to RAM
+Keywords=power;sleep;suspend;
+Exec=forynarch-power Sleep
+Icon=system-suspend
+Terminal=false
+NoDisplay=false
+Categories=System;

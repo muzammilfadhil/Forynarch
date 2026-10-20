@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Forynarch Settings
+GenericName=Desktop Settings
+Comment=Appearance, application glass, widgets and shortcuts
+Keywords=glass;blur;appearance;theme;desktop;settings;wifi;network;bluetooth;audio;display;monitor;power;fps;keyboard;
+Exec=forynarch-settings
+Icon=preferences-desktop
+Terminal=false
+Categories=Settings;DesktopSettings;

@@ -1,0 +1,363 @@
+{
+  "version": 1,
+  "bindings": [
+    {
+      "keys": "SUPER + SPACE",
+      "title": "Search apps",
+      "action": "exec",
+      "command": "forynarch-launcher",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + PERIOD",
+      "title": "Emoji, symbols and GIFs",
+      "action": "exec",
+      "command": "forynarch-emoji",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + Q",
+      "title": "Terminal",
+      "action": "exec",
+      "command": "forynarch-terminal",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + CTRL + SPACE",
+      "title": "Arrange windows",
+      "action": "exec",
+      "command": "qs -c forynarch ipc call appearance openLayout",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + CTRL + LEFT",
+      "title": "Snap left",
+      "action": "exec",
+      "command": "forynarch-window-layout left",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + CTRL + RIGHT",
+      "title": "Snap right",
+      "action": "exec",
+      "command": "forynarch-window-layout right",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + CTRL + UP",
+      "title": "Snap top",
+      "action": "exec",
+      "command": "forynarch-window-layout top",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + CTRL + DOWN",
+      "title": "Snap bottom",
+      "action": "exec",
+      "command": "forynarch-window-layout bottom",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + E",
+      "title": "Files",
+      "action": "exec",
+      "command": "forynarch-files",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + C",
+      "title": "Close window",
+      "action": "lua",
+      "code": "hl.dsp.window.close()",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + V",
+      "title": "Float / tile",
+      "action": "lua",
+      "code": "hl.dsp.window.float({action=\"toggle\"})",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + RETURN",
+      "title": "Terminal",
+      "action": "exec",
+      "command": "forynarch-terminal"
+    },
+    {
+      "keys": "SUPER + SHIFT + F",
+      "title": "Files",
+      "action": "exec",
+      "command": "forynarch-files"
+    },
+    {
+      "keys": "SUPER + ALT + SPACE",
+      "title": "Search apps",
+      "action": "exec",
+      "command": "forynarch-launcher"
+    },
+    {
+      "keys": "SUPER + CTRL + L",
+      "title": "Lock",
+      "action": "exec",
+      "command": "forynarch-hotkey lock"
+    },
+    {
+      "keys": "SUPER + K",
+      "title": "Hotkey guide",
+      "action": "exec",
+      "command": "forynarch-settings Shortcuts"
+    },
+    {
+      "keys": "SUPER + W",
+      "title": "Close window",
+      "action": "lua",
+      "code": "hl.dsp.window.close()"
+    },
+    {
+      "keys": "SUPER + T",
+      "title": "Float / tile",
+      "action": "lua",
+      "code": "hl.dsp.window.float({action=\"toggle\"})"
+    },
+    {
+      "keys": "SUPER + J",
+      "title": "Split direction",
+      "action": "lua",
+      "code": "hl.dsp.layout(\"togglesplit\")"
+    },
+    {
+      "keys": "SUPER + P",
+      "title": "Pseudo tile",
+      "action": "lua",
+      "code": "hl.dsp.window.pseudo()"
+    },
+    {
+      "keys": "SUPER + F",
+      "title": "Fullscreen",
+      "action": "lua",
+      "code": "hl.dsp.window.fullscreen({mode=\"fullscreen\"})"
+    },
+    {
+      "keys": "SUPER + ALT + F",
+      "title": "Maximize",
+      "action": "exec",
+      "command": "forynarch-window-control maximize"
+    },
+    {
+      "keys": "SUPER + CTRL + F",
+      "title": "Client fullscreen",
+      "action": "lua",
+      "code": "hl.dsp.window.fullscreen_state({internal=0,client=2})"
+    },
+    {
+      "keys": "SUPER + TAB",
+      "title": "Next local slot",
+      "action": "exec",
+      "command": "forynarch-workspace next"
+    },
+    {
+      "keys": "SUPER + SHIFT + TAB",
+      "title": "Previous local slot",
+      "action": "exec",
+      "command": "forynarch-workspace previous"
+    },
+    {
+      "keys": "SUPER + CTRL + TAB",
+      "title": "Previous workspace",
+      "action": "lua",
+      "code": "hl.dsp.focus({workspace=\"previous_per_monitor\"})"
+    },
+    {
+      "keys": "ALT + TAB",
+      "title": "Recent window",
+      "action": "exec",
+      "command": "forynarch-window-switcher next",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "ALT + SHIFT + TAB",
+      "title": "Recent window, reverse",
+      "action": "exec",
+      "command": "forynarch-window-switcher previous",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "Alt_L",
+      "title": "Finish switch",
+      "action": "exec",
+      "command": "forynarch-window-switcher reset",
+      "flags": {
+        "release": true,
+        "ignore_mods": true,
+        "non_consuming": true
+      },
+      "hidden": true
+    },
+    {
+      "keys": "Alt_R",
+      "title": "Finish switch",
+      "action": "exec",
+      "command": "forynarch-window-switcher reset",
+      "flags": {
+        "release": true,
+        "ignore_mods": true,
+        "non_consuming": true
+      },
+      "hidden": true
+    },
+    {
+      "keys": "CTRL + ALT + TAB",
+      "title": "Next monitor",
+      "action": "lua",
+      "code": "hl.dsp.focus({monitor=\"+1\"})"
+    },
+    {
+      "keys": "CTRL + ALT + SHIFT + TAB",
+      "title": "Previous monitor",
+      "action": "lua",
+      "code": "hl.dsp.focus({monitor=\"-1\"})"
+    },
+    {
+      "keys": "SUPER + S",
+      "title": "Scratchpad",
+      "action": "lua",
+      "code": "hl.dsp.workspace.toggle_special(\"magic\")"
+    },
+    {
+      "keys": "SUPER + ALT + S",
+      "title": "Send to scratchpad",
+      "action": "lua",
+      "code": "hl.dsp.window.move({workspace=\"special:magic\"})"
+    },
+    {
+      "keys": "SUPER + G",
+      "title": "Group windows",
+      "action": "lua",
+      "code": "hl.dsp.group.toggle()"
+    },
+    {
+      "keys": "SUPER + ALT + TAB",
+      "title": "Next grouped tab",
+      "action": "lua",
+      "code": "hl.dsp.group.next()"
+    },
+    {
+      "keys": "SUPER + ALT + SHIFT + TAB",
+      "title": "Previous grouped tab",
+      "action": "lua",
+      "code": "hl.dsp.group.prev()"
+    },
+    {
+      "keys": "SUPER + MINUS",
+      "title": "Widen window",
+      "action": "lua",
+      "code": "hl.dsp.window.resize({x=40,y=0,relative=true})"
+    },
+    {
+      "keys": "SUPER + EQUAL",
+      "title": "Narrow window",
+      "action": "lua",
+      "code": "hl.dsp.window.resize({x=-40,y=0,relative=true})"
+    },
+    {
+      "keys": "SUPER + SHIFT + MINUS",
+      "title": "Shorten window",
+      "action": "lua",
+      "code": "hl.dsp.window.resize({x=0,y=-40,relative=true})"
+    },
+    {
+      "keys": "SUPER + SHIFT + EQUAL",
+      "title": "Heighten window",
+      "action": "lua",
+      "code": "hl.dsp.window.resize({x=0,y=40,relative=true})"
+    },
+    {
+      "keys": "SUPER + CTRL + A",
+      "title": "Sound settings",
+      "action": "exec",
+      "command": "forynarch-settings Sound"
+    },
+    {
+      "keys": "SUPER + CTRL + B",
+      "title": "Bluetooth settings",
+      "action": "exec",
+      "command": "forynarch-settings Bluetooth"
+    },
+    {
+      "keys": "SUPER + CTRL + W",
+      "title": "Network settings",
+      "action": "exec",
+      "command": "forynarch-settings Network"
+    },
+    {
+      "keys": "SUPER + CTRL + D",
+      "title": "Display settings",
+      "action": "exec",
+      "command": "forynarch-settings Displays"
+    },
+    {
+      "keys": "SUPER + CTRL + P",
+      "title": "Power settings",
+      "action": "exec",
+      "command": "forynarch-settings Power"
+    },
+    {
+      "keys": "SUPER + CTRL + H",
+      "title": "Hardware overview",
+      "action": "exec",
+      "command": "forynarch-settings About"
+    },
+    {
+      "keys": "PRINT",
+      "title": "Full screen screenshot",
+      "action": "exec",
+      "command": "forynarch-capture fullscreen"
+    },
+    {
+      "keys": "SUPER + CTRL + C",
+      "title": "Screenshot",
+      "action": "exec",
+      "command": "forynarch-hotkey screenshot"
+    },
+    {
+      "keys": "SUPER + COMMA",
+      "title": "Dismiss notice",
+      "action": "exec",
+      "command": "makoctl dismiss"
+    },
+    {
+      "keys": "SUPER + SHIFT + COMMA",
+      "title": "Dismiss all notices",
+      "action": "exec",
+      "command": "makoctl dismiss --all"
+    },
+    {
+      "keys": "SUPER + CTRL + COMMA",
+      "title": "Quiet notifications",
+      "action": "exec",
+      "command": "forynarch-notifications toggle"
+    },
+    {
+      "keys": "SUPER + SHIFT + S",
+      "title": "Select screenshot area",
+      "action": "exec",
+      "command": "forynarch-capture region",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + CTRL + V",
+      "title": "Clipboard history",
+      "action": "exec",
+      "command": "forynarch-capture-ui clipboard",
+      "origin": "Forynarch"
+    },
+    {
+      "keys": "SUPER + H",
+      "title": "Minimize window",
+      "action": "exec",
+      "command": "forynarch-window-control minimize",
+      "origin": "Forynarch"
+    }
+  ]
+}

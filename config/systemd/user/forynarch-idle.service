@@ -1,0 +1,9 @@
+[Unit]
+Description=Forynarch user-selected idle policy
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/hypridle -c %h/.config/hypr/forynarch-idle.conf
+Restart=on-failure
+RestartSec=3

@@ -1,0 +1,62 @@
+@import url("forynarch-glass.css");
+headerbar button.titlebutton { border-radius: 999px; min-width: 20px; min-height: 20px; padding: 2px; }
+/* Native Blue Hour styling; keep GTK sizing, accessibility and behavior. */
+@define-color theme_bg_color #111823;
+@define-color theme_fg_color #dfe9f8;
+@define-color theme_base_color #141d2a;
+@define-color theme_text_color #dfe9f8;
+@define-color theme_selected_bg_color #9acbff;
+@define-color theme_selected_fg_color #102338;
+window, .background { background-image:none; background-color: @forynarch_window_bg; color: @theme_fg_color; }
+menubar, toolbar, headerbar { background-image: none; background-color: #1c283b; color: #c9d9ee; }
+treeview, iconview, .view { background-color: @forynarch_content_bg; color: @theme_text_color; }
+treeview:selected, iconview:selected, .view:selected { background-color: @theme_selected_bg_color; color: @theme_selected_fg_color; }
+.sidebar { background-color: #172232; }
+entry { background-color: #141d2a; color: #dfe9f8; border-color: #354156; border-radius: 8px; }
+button { background-image:none; background-color:#24374e; color:#dfe9f8; border:1px solid #3b526e; border-radius:10px; padding:6px 12px; box-shadow:none; text-shadow:none; }
+button:hover { background-color:#304f70; border-color:#759bc5; }
+button:active, button:checked { background-color:#365d86; color:#f0f6ff; }
+button:disabled { background-color:#1c2a3b; color:#758ba5; border-color:#2c3c50; }
+button:focus { border-color:#9acbff; }
+button.suggested-action { background-color:#9acbff; color:#102338; border-color:#9acbff; }
+button.destructive-action { background-color:#49303b; color:#ffd6df; border-color:#8b5269; }
+infobar, infobar.info, infobar.warning { background-image:none; background-color:#20344d; color:#dfeaff; border-bottom:1px solid #3b526e; }
+infobar button { min-height:24px; padding:6px 14px; }
+.thunar infobar, .thunar infobar > revealer > box, .thunar infobar .content, .thunar infobar .action {
+  background-image:none; background-color:#20344d; color:#dfeaff;
+}
+.thunar infobar button, .thunar infobar button label { color:#dfeaff; }
+.thunar infobar button:disabled, .thunar infobar button:disabled label { color:#758ba5; }
+.thunar infobar > revealer > box { border:0; border-top:1px solid #3b526e; border-bottom:1px solid #3b526e; }
+dialog .dialog-action-area { padding:12px; background-color:#172639; }
+.titlebar, .titlebar:backdrop, .titlebar box { background-image:none; background-color:#172639; color:#dfe9f8; }
+.titlebar label { color:#dfe9f8; }
+combobox button, spinbutton, searchbar, actionbar { background-image:none; background-color:#203249; color:#dfe9f8; }
+check, radio { background-color:#24374e; border-color:#547394; }
+check:checked, radio:checked { background-color:#9acbff; color:#102338; }
+scrollbar trough { background-color:transparent; }
+scrollbar slider { background-color:#4c6685; border-radius:8px; min-width:6px; min-height:6px; }
+menu { background-color: #1c283b; color: #dfe9f8; }
+menuitem:hover { background-color: #2b4463; }
+selection { background-color: @theme_selected_bg_color; color: @theme_selected_fg_color; }
+
+/* Blue Hour files: native GTK widgets, with a quiet navigation rail. */
+.thunar { -ThunarAbstractIconView-row-spacing: 22; -ThunarAbstractIconView-column-spacing: 20; }
+.thunar toolbar { padding: 10px 12px; border-bottom: 1px solid #2a3a50; background-color: @forynarch_toolbar_bg; }
+.thunar toolbar button { padding: 6px 9px; border: 0; box-shadow: none; background-image: none; background-color: transparent; color: #c9d9ee; }
+.thunar toolbar button:disabled { color: #627a96; }
+.thunar paned > separator { background-image: none; background-color: #2b3e55; min-width: 1px; }
+.thunar toolbar button:hover { background-color: #273e59; }
+.thunar toolbar button:checked { background-color: #304f70; color: #e0efff; }
+.thunar .sidebar { background-color: @forynarch_sidebar_bg; }
+.thunar .sidebar .view { background-color: transparent; }
+.thunar .sidebar .view { padding: 8px; }
+.thunar .sidebar .view:selected { background-color: #284b70; color: #e0efff; }
+.thunar .view { background-color: @forynarch_content_bg; }
+.thunar iconview { padding: 18px; border: 0; }
+.thunar iconview:selected { background-color: #2d5279; color: #f0f6ff; border-radius: 10px; }
+.thunar statusbar { padding: 6px 12px; background-color: #121b28; border-top: 1px solid #26364b; color: #94abc7; }
+.thunar notebook > header { background-color: #152031; border: 0; }
+.thunar notebook > header tabs tab { padding: 8px 14px; border: 0; background-color: #1b2a3d; }
+.thunar notebook > header tabs tab:checked { background-color: #284564; color: #e0efff; }
+.thunar scrolledwindow { border: 0; }

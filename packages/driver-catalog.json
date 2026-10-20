@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "core": ["linux", "linux-firmware", "mesa"],
+  "choices": [
+    {"id":"intel-vulkan","label":"Intel Vulkan","description":"Additional Vulkan support for supported Intel graphics.","vendor":"0x8086","packages":["vulkan-intel"]},
+    {"id":"amd-vulkan","label":"AMD Vulkan","description":"Additional Vulkan support for supported AMD graphics.","vendor":"0x1002","packages":["vulkan-radeon"]},
+    {"id":"intel-video","label":"Intel video acceleration","description":"Configure after installation once the Intel GPU generation has been checked. Kernel and Mesa graphics remain included.","vendor":"0x8086","packages":["intel-media-driver"],"blocked":true},
+    {"id":"nvidia","label":"NVIDIA graphics","description":"Automatic proprietary driver selection requires a GPU-generation and kernel compatibility check. Configure the matching driver after installation.","vendor":"0x10de","packages":[],"blocked":true}
+  ]
+}

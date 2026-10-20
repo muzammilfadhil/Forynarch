@@ -1,0 +1,2 @@
+# Private VM disk views must never be mounted by desktop automounters.
+SUBSYSTEM=="block", KERNEL=="dm-*", ATTR{dm/uuid}=="FORYNARCH-VM-*", ENV{UDISKS_IGNORE}="1", ENV{UDISKS_AUTO}="0", ENV{DM_UDEV_DISABLE_OTHER_RULES_FLAG}="1"

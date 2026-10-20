@@ -1,0 +1,20 @@
+# Opaque notifications with the same desktop palette.
+font=DejaVu Sans 11
+background-color=#111823
+text-color=#dfe9f8
+border-color=#354156
+border-size=1
+border-radius=16
+padding=16
+width=330
+margin=16
+default-timeout=6000
+max-history=50
+on-notify=exec qs -c forynarch ipc call appearance notificationReceived >/dev/null 2>&1
+
+[urgency=critical]
+border-color=#f2b49b
+default-timeout=0
+
+[mode=do-not-disturb]
+invisible=1

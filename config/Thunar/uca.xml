@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+  <action>
+    <icon>preferences-desktop-wallpaper</icon>
+    <name>Set as wallpaper</name>
+    <unique-id>forynarch-wallpaper-1</unique-id>
+    <command>forynarch-wallpaper set %f</command>
+    <description>Use this image as your desktop wallpaper</description>
+    <patterns>*</patterns>
+    <range>1</range>
+    <image-files/>
+  </action>
+  <action>
+    <icon>drive-harddisk</icon>
+    <name>Drives and storage</name>
+    <unique-id>forynarch-storage-1</unique-id>
+    <command>forynarch-drives ui</command>
+    <description>Open This Computer and Windows drive aliases</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+  <action>
+    <icon>utilities-terminal</icon>
+    <name>Open Terminal Here</name>
+    <unique-id>forynarch-terminal-1</unique-id>
+    <command>forynarch-terminal --working-directory %f</command>
+    <description>Open a terminal in this folder</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+</actions>

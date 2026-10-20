@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Clipboard History
+Comment=Copy or remove locally saved clipboard entries
+Exec=forynarch-capture-ui clipboard
+Icon=edit-paste
+Terminal=false
+Categories=Utility;
+Keywords=clipboard;copy;paste;history;

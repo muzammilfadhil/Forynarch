@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "kind": "bundled-optional-applications",
+  "packages": {
+    "mudilmusic": {
+      "filename": "mudilmusic-3.9.0-3-x86_64.pkg.tar.zst",
+      "version": "3.9.0-3",
+      "sha256": "ebe4d515fa57bd26dcb8ed93180c3b47d74156e5dc4247d88a8d24bd0e314c7a"
+    }
+  }
+}

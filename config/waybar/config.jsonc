@@ -1,0 +1,40 @@
+{
+  "layer": "top", "position": "top", "height": 38,
+  "margin": "10 14 0 14", "spacing": 4,
+  "reload_style_on_change": true,
+  "modules-left": ["custom/brand", "custom/ws1", "custom/ws2", "custom/ws3", "custom/ws4", "custom/ws5"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "pulseaudio", "battery", "tray", "custom/session"],
+  "custom/brand": {
+    "format": "FORYNARCH", "tooltip-format": "Applications · Super + Space",
+    "on-click": "fuzzel", "on-click-right": "forynarch-menu"
+  },
+  "custom/ws1": {"exec": "forynarch-workspace status 1", "return-type": "json", "signal": 8, "on-click": "forynarch-workspace focus 1"},
+  "custom/ws2": {"exec": "forynarch-workspace status 2", "return-type": "json", "signal": 8, "on-click": "forynarch-workspace focus 2"},
+  "custom/ws3": {"exec": "forynarch-workspace status 3", "return-type": "json", "signal": 8, "on-click": "forynarch-workspace focus 3"},
+  "custom/ws4": {"exec": "forynarch-workspace status 4", "return-type": "json", "signal": 8, "on-click": "forynarch-workspace focus 4"},
+  "custom/ws5": {"exec": "forynarch-workspace status 5", "return-type": "json", "signal": 8, "on-click": "forynarch-workspace focus 5"},
+  "clock": {
+    "format": "{:%H:%M}", "format-alt": "{:%a, %d %b}",
+    "tooltip-format": "{:%A, %d %B %Y}", "interval": 60
+  },
+  "network": {
+    "format-wifi": "Wi-Fi", "format-ethernet": "Connected", "format-disconnected": "Offline",
+    "tooltip-format": "{ifname} · {ipaddr}", "tooltip-format-wifi": "{essid} · {signalStrength}%",
+    "on-click": "forynarch-terminal --title=Network nmtui"
+  },
+  "pulseaudio": {
+    "format": "Sound {volume}%", "format-muted": "Muted",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle", "scroll-step": 5
+  },
+  "battery": {
+    "states": {"warning": 25, "critical": 10}, "format": "{capacity}%",
+    "format-charging": "+ {capacity}%", "format-full": "Full",
+    "tooltip-format": "{timeTo} · {capacity}%"
+  },
+  "tray": {"icon-size": 16, "spacing": 8},
+  "custom/session": {
+    "format": "Session", "tooltip-format": "Lock, sign out or power options",
+    "on-click": "forynarch-power"
+  }
+}

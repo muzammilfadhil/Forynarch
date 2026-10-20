@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Restart
+Comment=Restart this computer
+Keywords=power;restart;reboot;
+Exec=forynarch-power Restart
+Icon=system-reboot
+Terminal=false
+NoDisplay=false
+Categories=System;

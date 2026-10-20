@@ -1,0 +1,81 @@
+# Archiso-generated outputs
+/work/
+/out/
+/SOURCE-MANIFEST.json
+*.iso
+*.img
+*.qcow2
+*.vdi
+*.vmdk
+*.log
+*.tmp
+*.qsb
+
+# Editor and OS leftovers
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Credentials and private authoring configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Local sessions and private development state
+/.serena/
+/.codex/
+/.claude/
+/codex-session-*.md
+/.history/
+/.cache/
+/.direnv/
+/.venv/
+/venv/
+node_modules/
+.dart_tool/
+coverage/
+*.stackdump
+*.dmp
+
+# VM state and generated release/package archives
+*.vbox
+*.vbox-prev
+*.nvram
+*.sav
+*.vhd
+*.vhdx
+*.avhdx
+*.ova
+*.ovf
+*.pkg.tar.*
+*.tar.gz
+*.tar.zst
+*.zip
+*.7z
+*.bak
+
+# Secret material and user-specific network/storage state
+*.p12
+*.pfx
+*.jks
+*_ed25519
+*_ed25519.pub
+known_hosts
+authorized_keys
+credentials.json
+secrets.json
+windows-drives.json
+*.recovery-key
+*bitlocker-key*
+
+# Local optional login artwork: redistribution rights are not established
+/config/sddm/themes/forynarch-kath/Backgrounds/hyprland_kath.mp4
+/config/sddm/themes/forynarch-kath/Backgrounds/hyprland_kath.png

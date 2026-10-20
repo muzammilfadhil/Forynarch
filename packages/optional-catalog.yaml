@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "kind": "optional-package-catalog",
+  "policy": {
+    "developer_groups_default": false,
+    "user_must_opt_in": true,
+    "network_required_for_unbundled_packages": true,
+    "use_official_signed_arch_packages": true
+  },
+  "groups": [
+    {
+      "id": "git",
+      "category": "development",
+      "label": "Git",
+      "description": "Version control",
+      "default": false,
+      "packages": [
+        "git"
+      ]
+    },
+    {
+      "id": "nodejs-npm",
+      "category": "development",
+      "label": "Node.js + npm",
+      "description": "JavaScript runtime and package manager",
+      "default": false,
+      "packages": [
+        "nodejs",
+        "npm"
+      ]
+    },
+    {
+      "id": "python",
+      "category": "development",
+      "label": "Python",
+      "description": "Python runtime; pip can be added later",
+      "default": false,
+      "packages": [
+        "python"
+      ]
+    },
+    {
+      "id": "python-pip",
+      "category": "development",
+      "label": "Python pip",
+      "description": "Python package installer",
+      "default": false,
+      "packages": [
+        "python-pip"
+      ]
+    },
+    {
+      "id": "neovim",
+      "category": "development",
+      "label": "Neovim",
+      "description": "Terminal editor",
+      "default": false,
+      "packages": [
+        "neovim"
+      ]
+    },
+    {
+      "id": "code-oss",
+      "category": "development",
+      "label": "Code OSS",
+      "description": "Graphical code editor; validate package availability",
+      "default": false,
+      "packages": [
+        "code"
+      ]
+    },
+    {
+      "id": "docker",
+      "category": "development",
+      "label": "Docker",
+      "description": "Container engine; service setup requires explicit consent",
+      "default": false,
+      "packages": [
+        "docker"
+      ]
+    },
+    {
+      "id": "podman",
+      "category": "development",
+      "label": "Podman",
+      "description": "Container runtime",
+      "default": false,
+      "packages": [
+        "podman"
+      ]
+    },
+    {
+      "id": "rust",
+      "category": "development",
+      "label": "Rustup",
+      "description": "Rust toolchain manager; toolchain download is a separate step",
+      "default": false,
+      "packages": [
+        "rustup"
+      ]
+    },
+    {
+      "id": "golang",
+      "category": "development",
+      "label": "Go",
+      "description": "Go language toolchain",
+      "default": false,
+      "packages": [
+        "go"
+      ]
+    },
+    {
+      "id": "firefox",
+      "category": "daily",
+      "label": "Firefox",
+      "description": "Web browser",
+      "default": false,
+      "packages": [
+        "firefox"
+      ]
+    },
+    {
+      "id": "chromium",
+      "label": "Chromium",
+      "description": "Web browser - signed Arch repository",
+      "default": false,
+      "packages": [
+        "chromium"
+      ],
+      "category": "daily"
+    },
+    {
+      "id": "vivaldi",
+      "label": "Vivaldi",
+      "description": "Web browser - signed Arch repository",
+      "default": false,
+      "packages": [
+        "vivaldi"
+      ],
+      "category": "daily"
+    },
+    {
+      "id": "google-chrome",
+      "label": "Google Chrome",
+      "description": "Web browser - third-party Flathub packaging; downloads a Flatpak runtime",
+      "default": false,
+      "packages": [
+        "flatpak"
+      ],
+      "category": "daily",
+      "flatpaks": [
+        "com.google.Chrome"
+      ]
+    },
+    {
+      "id": "zen",
+      "label": "Zen Browser",
+      "description": "Web browser - Flathub; downloads a Flatpak runtime",
+      "default": false,
+      "packages": [
+        "flatpak"
+      ],
+      "category": "daily",
+      "flatpaks": [
+        "app.zen_browser.zen"
+      ]
+    },
+    {
+      "id": "filezilla",
+      "label": "FileZilla",
+      "description": "FTP, FTPS and SFTP transfer client; not a web browser",
+      "default": false,
+      "packages": [
+        "filezilla"
+      ],
+      "category": "daily"
+    },
+    {
+      "id": "discord",
+      "label": "Discord",
+      "description": "Messaging, voice and video calls; proprietary application",
+      "packages": [
+        "discord"
+      ],
+      "category": "daily",
+      "default": false
+    },
+    {
+      "id": "libreoffice",
+      "label": "LibreOffice",
+      "description": "Documents, spreadsheets and presentations",
+      "packages": [
+        "libreoffice-fresh"
+      ],
+      "category": "daily",
+      "default": false
+    },
+    {
+      "id": "zoom",
+      "label": "Zoom",
+      "description": "Video meetings - community Flathub package; downloads a Flatpak runtime",
+      "packages": [
+        "flatpak"
+      ],
+      "flatpaks": [
+        "us.zoom.Zoom"
+      ],
+      "category": "daily",
+      "default": false
+    },
+    {
+      "id": "vscode",
+      "label": "Visual Studio Code",
+      "description": "Microsoft editor - community Flathub package; downloads a Flatpak runtime",
+      "packages": [
+        "flatpak"
+      ],
+      "flatpaks": [
+        "com.visualstudio.code"
+      ],
+      "category": "development",
+      "default": false
+    },
+    {
+      "id": "experimental-os-vm",
+      "category": "daily",
+      "label": "Existing OS virtual machines (experimental)",
+      "description": "Optional QEMU, UEFI and virtual TPM support. Stays off until enabled in Settings; setup never opens an existing OS volume.",
+      "default": false,
+      "packages": [
+        "qemu-desktop",
+        "edk2-ovmf",
+        "swtpm",
+        "device-mapper",
+        "mtools",
+        "dosfstools",
+        "ntfs-3g",
+        "ntfsprogs"
+      ]
+    },
+    {
+      "id": "mudilmusic",
+      "category": "daily",
+      "label": "Mudil Music",
+      "description": "Music player with desktop playback controls and optional widget lyrics. Installs only when selected here.",
+      "default": false,
+      "packages": [
+        "mudilmusic",
+        "libsecret",
+        "mpv"
+      ]
+    }
+  ]
+}

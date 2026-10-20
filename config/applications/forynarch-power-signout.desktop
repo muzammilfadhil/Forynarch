@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Sign Out
+Comment=End this Forynarch session
+Keywords=power;sign out;log out;logout;
+Exec=forynarch-power "Sign out"
+Icon=system-log-out
+Terminal=false
+NoDisplay=false
+Categories=System;

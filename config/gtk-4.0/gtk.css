@@ -1,0 +1,12 @@
+@import url("forynarch-glass.css");
+headerbar windowcontrols button { border-radius: 999px; min-width: 20px; min-height: 20px; padding: 2px; }
+window.background { background-color:@forynarch_window_bg; color:#dfe9f8; }
+.view { background-color:@forynarch_content_bg; color:#dfe9f8; }
+headerbar, .sidebar { background-color:@forynarch_sidebar_bg; color:#dfe9f8; }
+button { background-image:none; background-color:#24374e; color:#dfe9f8; border:1px solid #3b526e; border-radius:10px; box-shadow:none; }
+button:hover { background-color:#304f70; }
+button:disabled { background-color:#1c2a3b; color:#758ba5; }
+button.suggested-action { background-color:#9acbff; color:#102338; }
+button.destructive-action { background-color:#49303b; color:#ffd6df; }
+entry { background-color:#192b40; color:#dfe9f8; border-color:#3b526e; border-radius:8px; }
+popover > contents { background-color:#172639; color:#dfe9f8; }

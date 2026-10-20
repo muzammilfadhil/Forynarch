@@ -1,0 +1,7 @@
+NAME="Forynarch"
+PRETTY_NAME="Forynarch"
+ID=forynarch
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;118;192;236"
+LOGO=forynarch

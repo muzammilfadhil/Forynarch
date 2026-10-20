@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Screenshots
+GenericName=Screen Capture
+Comment=Capture the screen or select an area
+Exec=forynarch-capture-ui screenshots
+Icon=accessories-screenshot
+Terminal=false
+Categories=Utility;Graphics;
+Keywords=screenshot;capture;screen;clipboard;

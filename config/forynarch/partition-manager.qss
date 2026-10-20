@@ -1,0 +1,29 @@
+/* Scoped to the standard partition editor; no global Qt override. */
+QWidget { background-color: #142235; color: #dceaff; }
+QMainWindow, QDialog { background-color: #142235; }
+QAbstractItemView, QPlainTextEdit, QTextEdit, QLineEdit, QSpinBox, QDoubleSpinBox {
+    background-color: #101c2d;
+    color: #dceaff;
+    selection-background-color: #35618c;
+    selection-color: #ffffff;
+    alternate-background-color: #192b41;
+    border: 1px solid #36506a;
+}
+QMenuBar, QMenu, QToolBar, QStatusBar, QHeaderView::section {
+    background-color: #1c3048; color: #dceaff;
+}
+QHeaderView::section { padding: 5px; border: 1px solid #36506a; }
+QPushButton, QToolButton, QComboBox {
+    background-color: #243d58; color: #dceaff;
+    border: 1px solid #456380; border-radius: 5px; padding: 5px 8px;
+}
+QPushButton:hover, QToolButton:hover, QComboBox:hover,
+QMenu::item:selected, QMenuBar::item:selected { background-color: #35597c; }
+QPushButton:pressed, QToolButton:pressed { background-color: #426e98; }
+QPushButton:disabled, QToolButton:disabled { color: #74879d; background-color: #1a2b40; border-color: #304257; }
+QLabel:disabled { color: #74879d; }
+QDockWidget::title { background-color: #1c3048; padding: 6px; }
+QToolTip { background-color: #243d58; color: #ffffff; border: 1px solid #6c93b9; padding: 6px; }
+QScrollBar { background-color: #182a40; }
+QScrollBar::handle { background-color: #577694; border-radius: 4px; min-width: 12px; min-height: 12px; }
+QSplitter::handle { background-color: #263d55; }

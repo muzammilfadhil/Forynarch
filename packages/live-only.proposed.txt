@@ -1,0 +1,5 @@
+# REVIEW ONLY: not executable and never merged into target core.
+# Calamares packaging/source and dependency closure require release validation.
+calamares
+# Keep existing releng recovery packages under separate upstream review.
+# archiso, Git, Python/test tooling belong to the builder if needed, not target.

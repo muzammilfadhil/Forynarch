@@ -1,0 +1,43 @@
+/* Opaque, no blur or animations; only installed DejaVu glyphs are used. */
+* {
+  font-family: "DejaVu Sans", sans-serif;
+  font-size: 12px;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+window#waybar {
+  background: #101c30;
+  color: #d9e3f2;
+  border: 1px solid #293b5f;
+  border-radius: 10px;
+}
+#custom-brand {
+  color: #76c0ec;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 0 18px;
+}
+#custom-ws1, #custom-ws2, #custom-ws3, #custom-ws4, #custom-ws5 {
+  color: #8fa4c2;
+  background: transparent;
+  padding: 0 10px;
+  margin: 5px 2px;
+  border-radius: 6px;
+}
+#custom-ws1.active, #custom-ws2.active, #custom-ws3.active,
+#custom-ws4.active, #custom-ws5.active { background: #293b5f; color: #fff6dc; }
+#custom-ws1:hover, #custom-ws2:hover, #custom-ws3:hover,
+#custom-ws4:hover, #custom-ws5:hover { background: #1c2b44; }
+#battery.critical { color: #f2b49b; }
+#clock { color: #fff6dc; font-weight: bold; padding: 0 16px; }
+#network, #pulseaudio, #battery { padding: 0 10px; color: #b5c5dc; }
+#battery.warning { color: #f2b49b; }
+#tray { padding: 0 10px; }
+#custom-session {
+  color: #76c0ec;
+  background: #1c2b44;
+  border-radius: 6px;
+  margin: 5px 6px;
+  padding: 0 12px;
+}

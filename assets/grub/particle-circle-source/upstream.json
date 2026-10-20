@@ -1,0 +1,119 @@
+{
+  "repository": "https://github.com/yeyushengfan258/Particle-circle-grub-theme",
+  "revision": "f27991237562f93aacc3f333be4284430889f5bb",
+  "license": "GPL-3.0",
+  "files": [
+    {
+      "upstream": "backgrounds/backgrounds/background-window.jpg",
+      "file": "background.jpg",
+      "sha256": "4340334df4a17443b774d2cfb2e493e8fd9b9bd66df5f2945af66b5385834230",
+      "bytes": 188773
+    },
+    {
+      "upstream": "assets/assets-other/other-1080p/window.png",
+      "file": "info.png",
+      "sha256": "d1b1c46a9631da5ec8e0498eaa3e1be0b108014492cc2bee430c8f6f5c9a3f58",
+      "bytes": 25653
+    },
+    {
+      "upstream": "config/theme-window-1080p.txt",
+      "file": "theme.txt",
+      "sha256": "fc5b7672b563111165ea1f79e410fd5fe79cce0a76b3225db35ebb132b9c9901",
+      "bytes": 958
+    },
+    {
+      "upstream": "common/unifont-16.pf2",
+      "file": "unifont-16.pf2",
+      "sha256": "c3d4ff9585bd60560e1261cd18dfb5a2cee491623991051f5c796b7e6a067ecb",
+      "bytes": 2501872
+    },
+    {
+      "upstream": "assets/assets-other/other-1080p/select_c.png",
+      "file": "select_c.png",
+      "sha256": "be5f35df44ca17f60db760f51ae4448dee75e2c026192c3517dd2989ce99e755",
+      "bytes": 278
+    },
+    {
+      "upstream": "assets/assets-other/other-1080p/select_e.png",
+      "file": "select_e.png",
+      "sha256": "21a04e5f4fe74b2f370745dd7359cd67e8f0f5d3c254c7c2cda964537d60ebaf",
+      "bytes": 339
+    },
+    {
+      "upstream": "assets/assets-other/other-1080p/select_w.png",
+      "file": "select_w.png",
+      "sha256": "6dfa76fdd617ac059d4b3ea4676be0e01c702fa8e44086843d1cb7cea93ceb30",
+      "bytes": 324
+    },
+    {
+      "upstream": "assets/assets-icons/icons-1080p/efi.png",
+      "file": "icons/efi.png",
+      "sha256": "6af4ac3e3da246b88ef46d77238eaf1394938de304dd7752d804c2d5736afb37",
+      "bytes": 289
+    },
+    {
+      "upstream": "assets/assets-icons/icons-1080p/linux.png",
+      "file": "icons/linux.png",
+      "sha256": "41b458182182b2439a3eab55e78f78596b228923e418e2b33216a265d1366684",
+      "bytes": 505
+    },
+    {
+      "upstream": "assets/assets-icons/icons-1080p/windows.png",
+      "file": "icons/windows.png",
+      "sha256": "99b52611ba841a5e44b4ab686207d593f8a488429e63cf1b5de4920609620692",
+      "bytes": 153
+    },
+    {
+      "upstream": "assets/assets-icons/icons-1080p/unknown.png",
+      "file": "icons/unknown.png",
+      "sha256": "41b458182182b2439a3eab55e78f78596b228923e418e2b33216a265d1366684",
+      "bytes": 505
+    },
+    {
+      "upstream": "assets/assets-icons/icons-1080p/recovery.png",
+      "file": "icons/recovery.png",
+      "sha256": "d47dbb83c62ab3adee48bb9d416f5959f3bf6145999731165206f4e2a11cc0c3",
+      "bytes": 349
+    },
+    {
+      "upstream": "assets/assets-icons/icons-1080p/restart.png",
+      "file": "icons/restart.png",
+      "sha256": "7d9b752455c95e4e2f7eeae9f6ebefa927400d1ac66ae6c3aefdfa56ed2dc042",
+      "bytes": 298
+    },
+    {
+      "upstream": "assets/assets-icons/icons-1080p/shutdown.png",
+      "file": "icons/shutdown.png",
+      "sha256": "cd5f68ee9f86a6ac8c36af0ab322c3882bb226836b41f1c7a8d01101d996e194",
+      "bytes": 365
+    },
+    {
+      "upstream": "assets/assets-icons/icons-1080p/memtest.png",
+      "file": "icons/memtest.png",
+      "sha256": "07fa76db4be1125bf9dd17ec24c6888e9e1c434ad8309bc2e7367646cdf8bb93",
+      "bytes": 332
+    },
+    {
+      "upstream": "LICENSE",
+      "file": "licenses/Particle-circle-GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    {
+      "upstream": "common/unifont.otf",
+      "file": "assets/grub/particle-circle-source/unifont.otf",
+      "sha256": "ea39a0e614e7486490239c5759e1a0cd86fd49e335c4b08d2fd13e313147f022",
+      "bytes": 5325184
+    }
+  ],
+  "font_license": {
+    "file": "unifont.otf",
+    "upstream_options": [
+      "OFL-1.1",
+      "GNU GPL version 2 or later with the GNU Font Embedding Exception"
+    ],
+    "distribution_choice": "OFL-1.1",
+    "notice": "licenses/Unifont-OFL-1.1.txt",
+    "evidence": "Bundled OTF name-table license metadata"
+  }
+}

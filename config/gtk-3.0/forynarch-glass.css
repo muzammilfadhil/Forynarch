@@ -1,0 +1,5 @@
+/* Initial glass palette; the Appearance control can switch it to opaque. */
+@define-color forynarch_window_bg rgba(17,24,35,0.84);
+@define-color forynarch_content_bg transparent;
+@define-color forynarch_sidebar_bg rgba(17,29,45,0.35);
+@define-color forynarch_toolbar_bg rgba(21,32,49,0.35);

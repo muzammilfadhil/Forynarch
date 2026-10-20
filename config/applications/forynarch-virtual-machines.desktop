@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Virtual Machines
+Comment=Experimental existing-OS virtual machines
+Exec=forynarch-settings "Virtual Machines"
+Icon=computer
+Categories=System;Settings;
+Keywords=Windows;QEMU;KVM;EFI;virtualization;
+Terminal=false
